@@ -1,28 +1,24 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *countSetBits- function that count set bit.
+ *flip_bits - number of different bits between two numbers.
  *@n: first number.
- *Return: return count.
- */
-int countSetBits(int n)
-{
-	int count = 0;
-
-	while (n > 0)
-	{
-		count++;
-		n &= (n - 1);
-	}
-	return (count);
-}
-/**
- *flip_bits - number of different bits between two numbers
- *@n: first number.
- *@m: second number.
- *Return: number of bits you would need to flip
+ *@m:secound number.
+ *Return: number of bits flipped.
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	return (countSetBits(n ^ m));
+	unsigned long int d, c;
+	unsigned int count, i;
+
+	count = 0;
+	c = 1;
+	d = n ^ m;
+	for (i = 0; i < (sizeof(unsigned long int) * 8); i++)
+	{
+		if (c == (d & c))
+			count++;
+		c <<= 1;
+	}
+	return (count);
 }
