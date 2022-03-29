@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 /**
  * check97 - checks for the correct number of arguments
  * @argc: number of arguments
@@ -35,6 +36,7 @@ void check98(ssize_t check, char *file, int fd_from, int fd_to)
 		exit(98);
 	}
 }
+
 /**
  * check99 - checks that file_to was created and/or can be written to
  * @check: checks if true of false
