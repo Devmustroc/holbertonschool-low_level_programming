@@ -42,7 +42,6 @@ void fibonacci_93(unsigned long a, unsigned long b)
 		c++;
 	}
 }
-}
 /**
  * main - entry point, print fibonacci numbers to 92
  *
