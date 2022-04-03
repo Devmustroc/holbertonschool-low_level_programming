@@ -1,3 +1,6 @@
+#ifndef _MAIN_H_
+#define _MAIN_H_
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -11,3 +14,6 @@ int _sqrt_recursion(int n);
 int _sqrt_checke(int i, int n);
 int prime_checker(int i, int n);
 int is_prime_number(int n);
+int is_palindrome(char *s);
+
+#endif
