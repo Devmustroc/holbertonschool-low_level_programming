@@ -8,26 +8,18 @@
  */
 int main(void)
 {
-    pid_t mypid;
-    pid_t child_pid;
+    pid_t my_pid;
+    pid_t pid;
 
-    printf("before fork\n");
-    child_pid = fork();
-    if (child_pid == -1)
+    printf("Before fork\n");
+    pid = fork();
+    if (pid == -1)
     {
-       perror("Error:");
-       return (1);
+        perror("Error:");
+        return (1);
     }
     printf("After fork\n");
-    mypid = getpid();
-    printf("My pid is %u\n", mypid);
-    if (child_pid == 0)
-    {
-        printf("(%u) Nooooooooo!\n", mypid);
-    }
-    else
-    {
-    printf("(%u) %u, I am your father\n", mypid, child_pid);
-    }
+    my_pid = getpid();
+    printf("My pid is %u\n", my_pid);
     return (0);
 }
