@@ -10,7 +10,9 @@
 
 <body class="stackedit">
   <div class="stackedit__html"><h1 id="c---simple-shell"># C - Simple Shell</h1>
-<p><img src="https://i.ibb.co/k90MFrD/ST-14.png" alt="Project for Holberton School MiniShell"></p>
+    <p align="center">
+  <img width="200" src="https://i.ibb.co/k90MFrD/ST-14.png" alt="Project for Holberton School MiniShell">
+      
 <h2 id="background-context">Background Context</h2>
 <p>Write a simple UNIX command interpreter.</p>
 <h2 id="resources">Resources</h2>
