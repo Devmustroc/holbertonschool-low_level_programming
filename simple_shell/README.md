@@ -11,7 +11,7 @@
 <body class="stackedit">
   <div class="stackedit__html"><h1 id="c---simple-shell"># C - Simple Shell</h1>
     <p align="center">
-  <img src="<a href="https://ibb.co/4JvQHFg"><img src="https://i.ibb.co/JC6h9cF/ST-1200-400-px-800-400-px.png" alt="ST-1200-400-px-800-400-px" border="0"></a>" alt="Project for Holberton School MiniShell">
+  <img src="<a href="https://i.ibb.co/JC6h9cF/ST-1200-400-px-800-400-px.png"" alt="ST-1200-400-px-800-400-px" border="0"></a>" alt="Project for Holberton School MiniShell">
       
 <h2 id="background-context">Background Context</h2>
 <p>Write a simple UNIX command interpreter.</p>
