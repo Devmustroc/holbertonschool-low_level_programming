@@ -1,6 +1,5 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
-
 int _putchar(char);
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -17,7 +16,4 @@ void more_numbers(void);
 void print_times_table(int n);
 void print_times_table(int n);
 void fibonacci_93(unsigned long a, unsigned long b);
-int main(void);
-
-
 #endif
