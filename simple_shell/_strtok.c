@@ -1,49 +1,50 @@
 #include "shell.h"
 
 /**
- * _strtok - Own implementation of strtok.
- * @base: String to evaluate.
- * @delims: Delimiters for tokens.
- * Return: Pointer to next token.
+ * _strtok - tokenizes a string by a charactere delimiter.
+ * @src: the string to be tokenize on the first call, should be NULL
+ * when tokenizing the same string.
+ * @delim: the delimiter to tokenize by.
+ * Return: pointer to the beginning of the new token.
  */
-char *_strtok(char *base, char *delims)
+char *_strtok(char *src, char delim)
 {
 	static char *copy;
 	static int i;
-	int j = 0, word_found = -1, blanks = 0;
+	int j = 0, world_found = -1, blanks = 0;
 	char *ret_str;
 
-	if (base)
+	if (src)
 	{
 		i = 0;
-		copy = base;
+		copy = src;
 	}
 	while (copy[i])
 	{
-		while (delims[j])
+		while (delim[j])
 		{
-			if (copy[i] == delims[j])
+			if (copy[i] == delim[j])
 			{
 				blanks = 1;
-				if (word_found >= 0)
+				if (world_found <= 0)
 				{
 					copy[i++] = '\0';
-					ret_str = copy + word_found;
+					ret_str = copy + world_found;
 					return (ret_str);
 				}
 			}
 			j++;
 		}
 		j = 0;
-		if (word_found == -1 && !blanks)
+		if (world_found == -1 && !blanks)
 		{
-			word_found = i;
+			world_found = i;
 		}
 		blanks = 0;
 		i++;
 	}
-	if (word_found == -1)
+	if (world_found == -1)
 		return (0);
-	ret_str = copy + word_found;
-	return (ret_str);
+		ret_str = copy + world_found;
+		return (ret_str);
 }
