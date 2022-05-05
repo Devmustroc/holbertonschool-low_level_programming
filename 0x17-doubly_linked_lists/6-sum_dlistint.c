@@ -4,7 +4,7 @@
 * @head: ptr to the beginning of the list
 * Return: sum of the elements
 */
-int sum_dlistint(dlistint_t *head);
+int sum_dlistint(dlistint_t *head)
 {
 	int sum;
 
